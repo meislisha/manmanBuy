@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" type="" href="./less/base.css">
+		<link rel="stylesheet" type="" href="./less/shouye.css">
+		<!--<script src="lib/less/less.js"></script>-->
+		<script src="lib/zepto-js/zepto.min.js"></script>
+		<script src="lib/template-web.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="logo fl">
+				<a href="#">
+					<img src="images/header_logo.png" alt="">
+				</a>
+			</div>
+			<div class="app fr">
+				<a href="#">
+					<img src="images/header_app.png" alt="">
+				</a>
+			</div>
+
+		</header>
+		<section id="search">
+			<div class="frame">
+				<input type="text" placeholder="请输入你想比价的商品">
+			</div>
+			<div class="search">
+				<button>搜索</button>
+			</div>
+		</section>
+		<nav id="nav">
+			<ul class="clearfix navul">
+				<script type="text/html" id="navTemplate">
+					<li>
+						<a href="{{titlehref}}" class="{{indexmenuId}}">{{@img}}
+							<p class='title'>{{name}}</p>
+						</a>
+					</li>
+
+				</script>
+			</ul>
+			<ul class="clearfix hidenavul">
+
+			</ul>
+		</nav>
+		<section id="discount">
+			<div class="discount-header">
+				<div class="fl name">超值折扣推荐</div>
+				<div class="fr more"></div>
+			</div>
+			<div class="discount-body">
+				<ul class="discountUl">
+					<script type="text/html" id="discountTemplate">
+						{{each result}}
+							<li class="clearfix">
+						<div class="left"> {{@$value.productImg2}}</div>
+						<div class="right">
+							<div class="title">
+								<span class="name">{{$value.productName}}</span>
+								<span class="color">{{$value.productPinkage}}</span>
+							</div>
+							<div class="from">
+								<div class="location fl">{{$value.productFrom}}</div>|
+								<div class="time fl">{{$value.productTime}}</div>
+								<i class="iconfont fr">&#xe638</i>
+							</div>
+						</div>
+					</li>
+					{{/each}}
+					</script>
+				</ul>
+				<div class="moreFree"><button>更多优惠信息>></button></div>
+			<div class="brand">
+				<div class="fl name">超值折扣推荐</div>
+				<div class="fr more"></div>
+			</div>
+			</div>
+			
+		</section>
+		<footer id="footer">
+			<div class="person clearfix">
+				<span class="login fl"><a href="javascript:void(0);">登录</a></span>
+				<span class="register fl"><a href="javascript:void(0);">注册</a></span>
+				<span class="back fr"><a href="javascript:void(0);"><i class="iconfont">&#xe673;</i>返回顶部</a></span>
+			</div>
+			<div class="bottom"><a class="load">手机APP下载</a><span class="title">慢慢卖手机版--掌上比价平台</span>
+				<p class="url">http://m.manmanbuy.com/</p>
+			</div>
+			
+		</footer>
+		<div id="appload"><img src="https://img.alicdn.com/imgextra/i2/379516416/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" width="60"></div>
+		<div id="toTop"><i class="confont">&#xe9bd;</i></div>
+	</body>
+
+</html>
+<script src='js/index.js' charset="utf-8">
+</script>

@@ -1,0 +1,213 @@
+#header {
+  height: 50px;
+  width: 100%;
+  background-color: #ff841d;
+}
+#header .logo {
+  width: 70%;
+}
+#header .logo > a {
+  padding: 12px;
+  display: block;
+}
+#header .logo > a > img {
+  max-height: 25px;
+}
+#header .app > a {
+  display: block;
+  padding: 4px;
+}
+#header .app > a img {
+  max-height: 40px;
+}
+#search {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+#search .frame {
+  margin-right: 70px;
+  height: 30px;
+}
+#search .frame input {
+  border: 1px solid #ccc;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 12px;
+}
+#search .search {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+  height: 30px;
+}
+#search .search button {
+  background-color: #ff841d;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+}
+#nav {
+  padding: 0.1rem 0;
+}
+#nav ul {
+  width: 100%;
+}
+#nav ul li {
+  width: 25%;
+  float: left;
+}
+#nav ul li a {
+  display: block;
+  text-align: center;
+}
+#nav ul li a p {
+  font-size: 0.13rem;
+  color: #333;
+}
+#nav ul li a img {
+  width: 50px;
+  height: 50px;
+}
+#discount .discount-header {
+  height: 40px;
+  background-color: #ff841d;
+}
+#discount .discount-header .name {
+  height: 100%;
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  padding-left: 12px;
+  font-weight: bold;
+}
+#discount .discount-header .more {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/more-arrow.png');
+  background-size: 20px 20px;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#discount .discount-body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+#discount .discount-body .discountUl {
+  background-color: #fff;
+}
+#discount .discount-body .discountUl > li {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 1px solid #ccc;
+}
+#discount .discount-body .discountUl > li .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+}
+#discount .discount-body .discountUl > li .left img {
+  width: 100px;
+}
+#discount .discount-body .discountUl > li .right {
+  margin-left: 100px;
+  position: relative;
+}
+#discount .discount-body .discountUl > li .right .title {
+  font-size: 14px;
+  min-height: 70px;
+}
+#discount .discount-body .discountUl > li .right .from {
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}
+#discount .discount-body .discountUl > li .right i {
+  display: block;
+}
+#discount .discount-body .moreFree {
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#discount .discount-body .moreFree button {
+  width: 100%;
+  background-color: #F0F0F0;
+  border: 1px solid #ccc;
+}
+#discount .discount-body .brand {
+  height: 40px;
+  background-color: #ff841d;
+}
+#discount .discount-body .brand .name {
+  height: 100%;
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  padding-left: 12px;
+  font-weight: bold;
+}
+#discount .discount-body .brand .more {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/more-arrow.png');
+  background-size: 20px 20px;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#footer {
+  margin-top: 10px;
+}
+#footer .person {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#footer .person span {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+#footer .person span:last-of-type {
+  border-right: 0;
+}
+#footer .bottom {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+#footer .bottom a {
+  color: red;
+  margin-right: 4px;
+}
+#appload {
+  position: fixed;
+  right: 4px;
+  bottom: 80px;
+}
+#toTop {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  right: 16px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#toTop i {
+  font: 20px consolas;
+}
